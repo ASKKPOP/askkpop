@@ -6,7 +6,7 @@ Static site served at <https://askkpop.com>. No build step: plain HTML, one styl
 |------|------------|
 | `index.html` | **Noēsis — Field Guide to Every Service.** Every part of the Noēsis system in plain language. |
 | `beginner.html` | **Noēsis — Beginner's Guide.** The same system explained from zero. |
-| `creator.html` | **Hwan Joo Jang — Software Engineering.** Portfolio and project inquiry (the form opens a prefilled email; there is no backend). |
+| `creator.html` | **Hwan Joo Jang — Software Engineering.** Portfolio. Keeps its own original design (self-contained styles); it does not use the noesiis.com theme. |
 
 ## Design
 
@@ -22,4 +22,4 @@ The Noēsis pages summarize the public system wiki (`wiki/` in ASKKPOP/Noesis, s
 
 ## Deploy
 
-Upload the repository contents (everything except `README.md` and `.git`) to the askkpop.com web root. Bump the `?v=` query on the CSS and JS links when those files change so browsers don't keep the old copies.
+Upload the repository contents (everything except `README.md` and `.git`) to the askkpop.com web root (`/home/centos/ask`). `Noesis.html`, `noesis-world.html`, `roadmap.html` and `services.html` on the server are copies of `index.html`; refresh them after each deploy. Bump the `?v=` query on the CSS and JS links when those files change so browsers don't keep the old copies.
